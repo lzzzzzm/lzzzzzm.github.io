@@ -33,5 +33,5 @@ About 97 Participating teams and 153 submissions. We won the Runner-up of the CV
 
 The technical report is available on [arXiv](https://opendrivelab.github.io/Challenge%202024/occ_Harbour-Chips.pdf).
 
-![Image Alt Text](/images/CVPR2024-Challenge.jpg)
+![Challenge](/images/CVPR2024-Challenge.jpg)
 
