@@ -30,8 +30,8 @@ publishDate: '2023-12-19T00:00:00Z'
 publication_types: ['article-journal']
 
 # Publication name and optional abbreviated publication name.
-publication: In *IEEE Transactions on Neural Networks and Learning Systems *
-publication_short: In *TNNLS*
+publication: In IEEE Transactions on Neural Networks and Learning Systems 
+publication_short: In TNNLS
 
 abstract: Point cloud-based 3-D object detection is a significant and critical issue in numerous applications. While most existing methods attempt to capitalize on the geometric characteristics of point clouds, they neglect the internal semantic properties of point and the consistency between the semantic and geometric clues. We introduce a semantic consistency (SC) mechanism for 3-D object detection in this article, by reasoning about the semantic relations between 3-D object boxes and its internal points. This mechanism is based on a natural principle, the semantic category of a 3-D bounding box should be consistent with the categories of all points within the box. Driven by the SC mechanism, we propose a novel SC network (SCNet) to detect 3-D objects from point clouds. Specifically, the SCNet is composed of a feature extraction module, a detection decision module, and a semantic segmentation module. In inference, the feature extraction and the detection decision modules are used to detect 3-D objects. In training, the semantic segmentation module is jointly trained with the other two modules to produce more robust and applicable model parameters. The performance is greatly boosted through reasoning about the relations between the output 3-D object boxes and segmented points. The proposed SC mechanism is model-agnostic and can be integrated into other base 3-D object detection models. We test the proposed model on three challenging indoor and outdoor benchmark datasets  
 
@@ -56,7 +56,7 @@ url_poster: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'CVPR2025 Poster'
+  caption: ''
   focal_point: ''
   preview_only: false
 
@@ -78,7 +78,8 @@ slides: example
 
 Our main contribution:
 
-- We introduce an explicit state-based modeling approach designed to renovate the 3D features both spatially and temporally.
-- We propose a sparse, occlusion-aware mechanism that provides more accurate geometric 3D features. Additionally, we propose a novel sparse-based method for modeling long-term dynamic information. This approach not only reduces computational costs but also ensures spatial consistency.
-- Our method achieves a RayIoU of 41.7% on Occ3D and a RayIoU of 40.8% along with a mAVE of 0.44 for occupancy and scene flow prediction on OpenOcc, while also reducing the training memory usage to 8.7GB.
+- It proposes a framework that integrates semantic segmentation of point clouds to train the 3D object detection model and thus enhance its performance.
+- It proposes a semantic consistency mechanism and a corresponding loss function that regulate the relationships between predicted 3D boxes and internal points.
+- It implements and tests the consistency mechanism on three different 3D detectors to prove its universality.
+- The model achieves better results than comparison studies on three challenging datasets. The effectiveness of the approach is verified with ablation studies.
 
