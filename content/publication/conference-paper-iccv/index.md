@@ -31,14 +31,14 @@ abstract: Forecasting the evolution of 3D scenes and generating unseen scenarios
 summary: We propose an effcient intra-inter scene tokenization for occupancy-based 4D scene tokenization.
 
 tags:
-- Source Themes
+- Autonomous Driving
 featured: true
 
 # links:
 # - name: ""
 #   url: ""
 url_pdf: ''
-url_code: 'https://github.com/lzzzzzm/STCOcc'
+url_code: ''
 url_poster: ''
 
 # Featured image
