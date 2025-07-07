@@ -76,5 +76,7 @@ slides: example
 
 Our main contribution:
 
-- We propose STCOcc, a novel explicit state-based modeling method designed to leverage the occupied state to renovate 3D features for occupancy and scene flow prediction.
+- We introduce an explicit state-based modeling approach designed to renovate the 3D features both spatially and temporally.
+- We propose a sparse, occlusion-aware mechanism that provides more accurate geometric 3D features. Additionally, we propose a novel sparse-based method for modeling long-term dynamic information. This approach not only reduces computational costs but also ensures spatial consistency.
+- Our method achieves a RayIoU of 41.7% on Occ3D and a RayIoU of 40.8% along with a mAVE of 0.44 for occupancy and scene flow prediction on OpenOcc, while also reducing the training memory usage to 8.7GB.
 
