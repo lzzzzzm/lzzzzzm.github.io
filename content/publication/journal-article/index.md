@@ -25,7 +25,7 @@ publishDate: '2025-03-01T00:00:00Z'
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['paper-conference']
+publication_types: ['article-journal']
 
 # Publication name and optional abbreviated publication name.
 publication: In *IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2025*
