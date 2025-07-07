@@ -22,13 +22,13 @@ publishDate: "2025-06-01T00:00:00Z"
 publication_types: ["paper-conference"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Journal of Source Themes, 1*(1)"
-publication_short: ""
+publication: "International Conference on Computer Vision (ICCV) 2025"
+publication_short: "ICCV 2025"
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Forecasting the evolution of 3D scenes and generating unseen scenarios through occupancy-based world models offers substantial potential to enhance the safety of autonomous driving systems. While tokenization has revolutionized image and video generation, efficiently tokenizing complex 3D scenes remains a critical challenge for 3D world models. To address this, we propose $I^{2}$-World, an efficient framework for 4D occupancy forecasting. Our method decouples scene tokenization into intra-scene and inter-scene tokenizers. The intra-scene tokenizer employs a multi-scale residual quantization strategy to hierarchically compress 3D scenes while preserving spatial details. The inter-scene tokenizer residually aggregates temporal dependencies across timesteps. This dual design preserves the compactness of 3D tokenizers while retaining the dynamic expressiveness of 4D tokenizers. Unlike decoder-only GPT-style autoregressive models, $I^{2}$-World adopts an encoder-decoder architecture. The encoder aggregates spatial context from the current scene and predicts a transformation matrix to guide future scene generation. The decoder, conditioned on this matrix and historical tokens, ensures temporal consistency during generation. Experiments demonstrate that II-World achieves state-of-the-art performance, surpassing existing approaches by 41.8% in 4D occupancy forecasting with exceptional efficiency—requiring only 2.9 GB of training memory and achieving real-time inference at 94.8 FPS.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: We propose an effcient intra-inter scene tokenization for occupancy-based 4D scene tokenization.
 
 tags:
 - Source Themes

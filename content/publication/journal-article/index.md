@@ -1,26 +1,28 @@
 ---
-title: 'STCOcc: Sparse Spatial-Temporal Cascade Renovation for 3D Occupancy and Scene Flow Prediction'
+title: 'Semantic consistency reasoning for 3-D object detection in point clouds'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - admin
+  - Wenwen Wei
   - Ping Wei*
-  - Shuaijia Chen
-  - Haoxuan Wang
-  - Ziyang Ren
+  - admin
+  - Jialu Qin
+  - Xiang Cheng
+  - Meiqin Liu
+  - Nanning Zheng
 
 # Author notes (optional)
 author_notes:
   - 'Equal contribution'
   - 'Equal contribution'
 
-date: '2025-03-01T00:00:00Z'
+date: '2023-12-19T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-03-01T00:00:00Z'
+publishDate: '2023-12-19T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -28,16 +30,16 @@ publishDate: '2025-03-01T00:00:00Z'
 publication_types: ['article-journal']
 
 # Publication name and optional abbreviated publication name.
-publication: In *IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2025*
-publication_short: In *CVPR 2025*
+publication: In *IEEE Transactions on Neural Networks and Learning Systems *
+publication_short: In *TNNLS*
 
-abstract: 3D occupancy and scene flow offer a detailed and dynamic representation of 3D scene. Recognizing the sparsity and complexity of 3D space, previous vision-centric methods have employed implicit learning-based approaches to model spatial and temporal information. However, these approaches struggle to capture local details and diminish the model's spatial discriminative ability. To address these challenges, we propose a novel explicit state-based modeling method designed to leverage the occupied state to renovate the 3D features. Specifically, we propose a sparse occlusion-aware attention mechanism, integrated with a cascade refinement strategy, which accurately renovates 3D features with the guidance of occupied state information. Additionally, we introduce a novel method for modeling long-term dynamic interactions, which reduces computational costs and preserves spatial information. Compared to the previous state-of-the-art methods, our efficient explicit renovation strategy not only delivers superior performance in terms of RayIoU and mAVE for occupancy and scene flow prediction but also markedly reduces GPU memory usage during training, bringing it down to 8.7GB.
+abstract: Point cloud-based 3-D object detection is a significant and critical issue in numerous applications. While most existing methods attempt to capitalize on the geometric characteristics of point clouds, they neglect the internal semantic properties of point and the consistency between the semantic and geometric clues. We introduce a semantic consistency (SC) mechanism for 3-D object detection in this article, by reasoning about the semantic relations between 3-D object boxes and its internal points.
 
 # Summary. An optional shortened abstract.
-summary: We propose STCOcc, a novel explicit state-based modeling method designed to leverage the occupied state to renovate 3D features for occupancy and scene flow prediction.
+summary: 
 
 tags:
-  - Autonomous Driving
+  - 3D Object Detection
 
 # Display this page in the Featured widget?
 featured: false
