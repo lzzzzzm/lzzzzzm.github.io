@@ -1,56 +1,61 @@
 ---
-title: "II-World: Intra-Inter Tokenization for Efficient Dynamic 4D Scene Forecasting"
+title: 'STCOcc: Sparse Spatial-Temporal Cascade Renovation for 3D Occupancy and Scene Flow Prediction'
+
+# Authors
+# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
+# and it will be replaced with their full name and linked to their profile.
 authors:
-- admin
-- Ping Wei*
-- Ruijie Zhang
-- Shuaijia Chen
-- Haoxuan Wang
-- Ziyang Ren
+  - admin
+  - Ping Wei*
+  - Shuaijia Chen
+  - Haoxuan Wang
+  - Ziyang Ren
+
+# Author notes (optional)
 author_notes:
-- "Equal contribution"
-- "Equal contribution"
-date: "2025-06-01T00:00:00Z"
-doi: ""
+  - 'Equal contribution'
+  - 'Equal contribution'
+
+date: '2025-03-01T00:00:00Z'
+doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-06-01T00:00:00Z"
+publishDate: '2025-03-01T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article-journal"]
+publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: "*Journal of Source Themes, 1*(1)"
-publication_short: ""
+publication: In *IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2025*
+publication_short: In *CVPR 2025*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: 3D occupancy and scene flow offer a detailed and dynamic representation of 3D scene. Recognizing the sparsity and complexity of 3D space, previous vision-centric methods have employed implicit learning-based approaches to model spatial and temporal information. However, these approaches struggle to capture local details and diminish the model's spatial discriminative ability. To address these challenges, we propose a novel explicit state-based modeling method designed to leverage the occupied state to renovate the 3D features. Specifically, we propose a sparse occlusion-aware attention mechanism, integrated with a cascade refinement strategy, which accurately renovates 3D features with the guidance of occupied state information. Additionally, we introduce a novel method for modeling long-term dynamic interactions, which reduces computational costs and preserves spatial information. Compared to the previous state-of-the-art methods, our efficient explicit renovation strategy not only delivers superior performance in terms of RayIoU and mAVE for occupancy and scene flow prediction but also markedly reduces GPU memory usage during training, bringing it down to 8.7GB.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: We propose STCOcc, a novel explicit state-based modeling method designed to leverage the occupied state to renovate 3D features for occupancy and scene flow prediction.
 
 tags:
-- Source Themes
+  - Autonomous Driving
+
+# Display this page in the Featured widget?
 featured: true
 
+# Custom links (uncomment lines below)
 # links:
-# - name: ""
-#   url: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_dataset: ''
+# - name: Custom Link
+#   url: http://example.org
+
+url_pdf: ''
+url_code: 'https://github.com/lzzzzzm/STCOcc'
 url_poster: ''
-url_project: ''
-url_slides: ''
-url_source: ''
-url_video: ''
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
-  focal_point: ""
+  caption: 'CVPR2025 Poster'
+  focal_point: ''
   preview_only: true
 
 # Associated Projects (optional).
@@ -58,7 +63,8 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: []
+projects:
+  - example
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
@@ -68,12 +74,9 @@ projects: []
 slides: example
 ---
 
-{{% callout note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
+Our main contribution:
 
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
+- We introduce an explicit state-based modeling approach designed to renovate the 3D features both spatially and temporally.
+- We propose a sparse, occlusion-aware mechanism that provides more accurate geometric 3D features. Additionally, we propose a novel sparse-based method for modeling long-term dynamic information. This approach not only reduces computational costs but also ensures spatial consistency.
+- Our method achieves a RayIoU of 41.7% on Occ3D and a RayIoU of 40.8% along with a mAVE of 0.44 for occupancy and scene flow prediction on OpenOcc, while also reducing the training memory usage to 8.7GB.
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
