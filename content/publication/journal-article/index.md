@@ -33,7 +33,7 @@ publication_types: ['article-journal']
 publication: In *IEEE Transactions on Neural Networks and Learning Systems *
 publication_short: In *TNNLS*
 
-abstract: Point cloud-based 3-D object detection is a significant and critical issue in numerous applications. While most existing methods attempt to capitalize on the geometric characteristics of point clouds, they neglect the internal semantic properties of point and the consistency between the semantic and geometric clues. We introduce a semantic consistency (SC) mechanism for 3-D object detection in this article, by reasoning about the semantic relations between 3-D object boxes and its internal points.
+abstract: Point cloud-based 3-D object detection is a significant and critical issue in numerous applications. While most existing methods attempt to capitalize on the geometric characteristics of point clouds, they neglect the internal semantic properties of point and the consistency between the semantic and geometric clues. We introduce a semantic consistency (SC) mechanism for 3-D object detection in this article, by reasoning about the semantic relations between 3-D object boxes and its internal points. This mechanism is based on a natural principle, the semantic category of a 3-D bounding box should be consistent with the categories of all points within the box. Driven by the SC mechanism, we propose a novel SC network (SCNet) to detect 3-D objects from point clouds. Specifically, the SCNet is composed of a feature extraction module, a detection decision module, and a semantic segmentation module. In inference, the feature extraction and the detection decision modules are used to detect 3-D objects. In training, the semantic segmentation module is jointly trained with the other two modules to produce more robust and applicable model parameters. The performance is greatly boosted through reasoning about the relations between the output 3-D object boxes and segmented points. The proposed SC mechanism is model-agnostic and can be integrated into other base 3-D object detection models. We test the proposed model on three challenging indoor and outdoor benchmark datasets  
 
 # Summary. An optional shortened abstract.
 summary: 
@@ -50,7 +50,7 @@ featured: false
 #   url: http://example.org
 
 url_pdf: ''
-url_code: 'https://github.com/lzzzzzm/STCOcc'
+url_code: ''
 url_poster: ''
 
 # Featured image
