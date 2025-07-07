@@ -40,7 +40,7 @@ tags:
   - Autonomous Driving
 
 # Display this page in the Featured widget?
-featured: false
+featured: true
 
 # Custom links (uncomment lines below)
 # links:
@@ -56,7 +56,7 @@ url_poster: ''
 image:
   caption: 'CVPR2025 Poster'
   focal_point: ''
-  preview_only: false
+  preview_only: true
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
