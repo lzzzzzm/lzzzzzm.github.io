@@ -25,4 +25,4 @@ The representation of 3D bounding boxes is not enough to describe general object
 
 ### LearderBoard
 
-![learderboard](content/post/cvpr-challenge-2024/learderboard.png)
+<img src="content/post/cvpr-challenge-2024/learderboard.png" alt="Image Alt Text" style="width: 100%; height: auto;">
